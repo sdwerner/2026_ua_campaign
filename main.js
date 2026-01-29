@@ -1,4 +1,4 @@
-import './style.css';
+// Style imported via link tag in HTML for compatibility
 import { translations } from './src/locales.js';
 
 const defaultLang = 'ua';
