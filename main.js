@@ -10,6 +10,9 @@ function renderCandidates(lang) {
     const grid = document.getElementById('candidates-grid');
     if (!grid) return;
 
+    // Candidates with photos (based on file availability)
+    const candidatesWithPhotos = [1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14];
+
     grid.innerHTML = '';
     // We have 16 candidates
     for (let i = 1; i <= 16; i++) {
@@ -18,15 +21,24 @@ function renderCandidates(lang) {
 
         // Alt colors for avatars
         const bgColor = i % 2 === 0 ? '#fef08a' : '#e0f2fe';
+        const hasPhoto = candidatesWithPhotos.includes(i);
 
         const card = document.createElement('div');
         card.style.cssText = 'background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; cursor: pointer; transition: transform 0.2s;';
         card.onmouseover = () => card.style.transform = 'translateY(-5px)';
         card.onmouseout = () => card.style.transform = 'translateY(0)';
         card.onclick = () => openModal(i);
+
+        let imageHtml;
+        if (hasPhoto) {
+            imageHtml = `<img src="./public/images/candidates/c${i}.jpg" alt="${name}" style="width: 100%; height: 100%; object-fit: cover;">`;
+        } else {
+            imageHtml = `<img src="./public/images/candidate-placeholder.svg" alt="Placeholder" style="width: 50%; opacity: 0.5;">`;
+        }
+
         card.innerHTML = `
-      <div style="height: 180px; background: ${bgColor}; display: flex; align-items: center; justify-content: center;">
-        <span style="font-size: 3rem;">👤</span>
+      <div style="height: 250px; background: ${hasPhoto ? 'transparent' : bgColor}; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+        ${imageHtml}
       </div>
       <div style="padding: 1.5rem; flex-grow: 1;">
          <h3 style="font-size: 1.15rem; margin-bottom: 0.25rem; font-family: var(--font-display); text-transform: uppercase;">${name}</h3>
@@ -50,14 +62,22 @@ function openModal(candidateId) {
     document.getElementById('modal-role').textContent = t.candidates[`c${candidateId}_role`];
     document.getElementById('modal-bio').textContent = t.candidates[`c${candidateId}_bio`];
 
-    // Image logic (placeholder for now, matching the card style)
+    // Image logic
+    const candidatesWithPhotos = [1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14];
+    const hasPhoto = candidatesWithPhotos.includes(candidateId);
     const i = candidateId;
     const bgColor = i % 2 === 0 ? '#fef08a' : '#e0f2fe';
-    const imagePlaceholder = document.getElementById('modal-image-placeholder');
-    if (imagePlaceholder) {
-        imagePlaceholder.style.background = bgColor;
-        // If we had real images, we would set an img src here
-        // imagePlaceholder.innerHTML = `<img src="..." ...>`;
+
+    const imageWrapper = document.querySelector('.modal-image-wrapper');
+    if (imageWrapper) {
+        if (hasPhoto) {
+            imageWrapper.innerHTML = `<img src="./public/images/candidates/c${i}.jpg" alt="Candidate" style="width: 100%; height: 100%; object-fit: cover;">`;
+        } else {
+            imageWrapper.innerHTML = `
+                <div style="width: 100%; height: 100%; background: ${bgColor}; display: flex; align-items: center; justify-content: center;">
+                    <img src="./public/images/candidate-placeholder.svg" style="width: 50%; opacity: 0.5;">
+                </div>`;
+        }
     }
 
     modal.style.display = 'flex';
