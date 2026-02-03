@@ -31,7 +31,7 @@ function renderCandidates(lang) {
 
         let imageHtml;
         if (hasPhoto) {
-            imageHtml = `<img src="./public/images/candidates/c${i}.jpg" alt="${name}" style="width: 100%; height: 100%; object-fit: cover;">`;
+            imageHtml = `<img src="./public/images/candidates/c${i}.jpg" alt="${name}" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">`;
         } else {
             imageHtml = `<img src="./public/images/candidate-placeholder.svg" alt="Placeholder" style="width: 50%; opacity: 0.5;">`;
         }
@@ -71,7 +71,7 @@ function openModal(candidateId) {
     const imageWrapper = document.querySelector('.modal-image-wrapper');
     if (imageWrapper) {
         if (hasPhoto) {
-            imageWrapper.innerHTML = `<img src="./public/images/candidates/c${i}.jpg" alt="Candidate" style="width: 100%; height: 100%; object-fit: cover;">`;
+            imageWrapper.innerHTML = `<img src="./public/images/candidates/c${i}.jpg" alt="Candidate" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">`;
         } else {
             imageWrapper.innerHTML = `
                 <div style="width: 100%; height: 100%; background: ${bgColor}; display: flex; align-items: center; justify-content: center;">
