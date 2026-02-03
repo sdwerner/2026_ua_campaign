@@ -41,7 +41,7 @@ export const translations = {
             c14_name: "Yelyzaveta Werner", c14_role: "Графічна дизайнерка",
             c15_name: "Olena Levchenko", c15_role: "Студентка",
             c16_name: "Igor Kiselov", c16_role: "Консультант",
-            c1_bio: "Біографія незабаром...", c2_bio: "Біографія незабаром...", c3_bio: "Біографія незабаром...", c4_bio: "Біографія незабаром...",
+            c1_bio: "Біографія незабаром...", c2_bio: "Біографія незабаром...", c3_bio: "Клиженко Яна — психолог за освітою, практикуючий психолог і тренер. З березня 2022 року є активною волонтеркою Українського координаційного центру у Франкфурті-на-Майні. Курує проєкти, спрямовані на підтримку України та українців у Німеччині, зокрема інформаційну й консультаційну допомогу переселенцям, супровід родин з дітьми з особливими освітніми потребами та організацію культурних заходів для популяризації української культури й зміцнення українсько-німецького діалогу.", c4_bio: "Біографія незабаром...",
             c5_bio: "Біографія незабаром...", c6_bio: "Біографія незабаром...", c7_bio: "Біографія незабаром...", c8_bio: "Біографія незабаром...",
             c9_bio: "Біографія незабаром...", c10_bio: "Біографія незабаром...", c11_bio: "Біографія незабаром...", c12_bio: "Біографія незабаром...",
             c13_bio: "Біографія незабаром...", c14_bio: "Біографія незабаром...", c15_bio: "Біографія незабаром...", c16_bio: "Біографія незабаром..."
@@ -187,7 +187,7 @@ export const translations = {
             c14_name: "Yelyzaveta Werner", c14_role: "Grafikdesignerin",
             c15_name: "Olena Levchenko", c15_role: "Studentin",
             c16_name: "Igor Kiselov", c16_role: "Consultant",
-            c1_bio: "Biografie folgt bald...", c2_bio: "Biografie folgt bald...", c3_bio: "Biografie folgt bald...", c4_bio: "Biografie folgt bald...",
+            c1_bio: "Biografie folgt bald...", c2_bio: "Biografie folgt bald...", c3_bio: "Yana Klyzhenko ist Psychologin von Ausbildung, praktizierende Psychologin und Trainerin. Seit März 2022 engagiert sie sich aktiv ehrenamtlich im Ukrainischen Koordinationszentrum in Frankfurt am Main. Sie betreut Projekte zur Unterstützung der Ukraine und der ukrainischen Community in Deutschland, darunter Informations- und Beratungsangebote für Geflüchtete, Begleitung von Familien mit Kindern mit besonderem Förderbedarf sowie die Mitorganisation kultureller Veranstaltungen zur Förderung der ukrainischen Kultur und des deutsch-ukrainischen Dialogs.", c4_bio: "Biografie folgt bald...",
             c5_bio: "Biografie folgt bald...", c6_bio: "Biografie folgt bald...", c7_bio: "Biografie folgt bald...", c8_bio: "Biografie folgt bald...",
             c9_bio: "Biografie folgt bald...", c10_bio: "Biografie folgt bald...", c11_bio: "Biografie folgt bald...", c12_bio: "Biografie folgt bald...",
             c13_bio: "Biografie folgt bald...", c14_bio: "Biografie folgt bald...", c15_bio: "Biografie folgt bald...", c16_bio: "Biografie folgt bald..."
