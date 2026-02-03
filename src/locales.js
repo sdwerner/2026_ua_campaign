@@ -114,7 +114,7 @@ export const translations = {
             c14_name: "Yelyzaveta Werner", c14_role: "Graphic Designer",
             c15_name: "Olena Levchenko", c15_role: "Student",
             c16_name: "Igor Kiselov", c16_role: "Consultant",
-            c1_bio: "Biography coming soon...", c2_bio: "Biography coming soon...", c3_bio: "Biography coming soon...", c4_bio: "Biography coming soon...",
+            c1_bio: "Biography coming soon...", c2_bio: "Biography coming soon...", c3_bio: "Yana Klyzhenko is a psychologist by training, a practicing psychologist, and a trainer. Since March 2022, she has been an active volunteer at the Ukrainian Coordination Center in Frankfurt am Main. She oversees projects supporting Ukraine and the Ukrainian community in Germany, including information and counseling services for refugees, support for families with children with special needs, and the co-organization of cultural events to promote Ukrainian culture and strengthen German-Ukrainian dialogue.", c4_bio: "Biography coming soon...",
             c5_bio: "Biography coming soon...", c6_bio: "Biography coming soon...", c7_bio: "Biography coming soon...", c8_bio: "Biography coming soon...",
             c9_bio: "Biography coming soon...", c10_bio: "Biography coming soon...", c11_bio: "Biography coming soon...", c12_bio: "Biography coming soon...",
             c13_bio: "Biography coming soon...", c14_bio: "Biography coming soon...", c15_bio: "Biography coming soon...", c16_bio: "Biography coming soon..."
