@@ -20,7 +20,10 @@ function renderCandidates(lang) {
         const bgColor = i % 2 === 0 ? '#fef08a' : '#e0f2fe';
 
         const card = document.createElement('div');
-        card.style.cssText = 'background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column;';
+        card.style.cssText = 'background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); display: flex; flex-direction: column; cursor: pointer; transition: transform 0.2s;';
+        card.onmouseover = () => card.style.transform = 'translateY(-5px)';
+        card.onmouseout = () => card.style.transform = 'translateY(0)';
+        card.onclick = () => openModal(i);
         card.innerHTML = `
       <div style="height: 180px; background: ${bgColor}; display: flex; align-items: center; justify-content: center;">
         <span style="font-size: 3rem;">👤</span>
@@ -31,6 +34,41 @@ function renderCandidates(lang) {
       </div>
     `;
         grid.appendChild(card);
+    }
+}
+
+// Modal Functions
+function openModal(candidateId) {
+    const lang = currentLang;
+    const t = translations[lang];
+    const modal = document.getElementById('candidate-modal');
+
+    if (!modal) return;
+
+    // Populate data
+    document.getElementById('modal-name').textContent = t.candidates[`c${candidateId}_name`];
+    document.getElementById('modal-role').textContent = t.candidates[`c${candidateId}_role`];
+    document.getElementById('modal-bio').textContent = t.candidates[`c${candidateId}_bio`];
+
+    // Image logic (placeholder for now, matching the card style)
+    const i = candidateId;
+    const bgColor = i % 2 === 0 ? '#fef08a' : '#e0f2fe';
+    const imagePlaceholder = document.getElementById('modal-image-placeholder');
+    if (imagePlaceholder) {
+        imagePlaceholder.style.background = bgColor;
+        // If we had real images, we would set an img src here
+        // imagePlaceholder.innerHTML = `<img src="..." ...>`;
+    }
+
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+}
+
+function closeModal() {
+    const modal = document.getElementById('candidate-modal');
+    if (modal) {
+        modal.style.display = 'none';
+        document.body.style.overflow = '';
     }
 }
 
@@ -88,6 +126,27 @@ document.addEventListener('DOMContentLoaded', () => {
             const lang = e.target.getAttribute('data-lang');
             updateContent(lang);
         });
+    });
+
+    // Modal Close Listeners
+    const modal = document.getElementById('candidate-modal');
+    const closeBtn = document.getElementById('modal-close');
+
+    if (closeBtn) {
+        closeBtn.onclick = closeModal;
+    }
+
+    if (modal) {
+        window.onclick = (event) => {
+            if (event.target == modal) {
+                closeModal();
+            }
+        };
+    }
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeModal();
     });
 });
 

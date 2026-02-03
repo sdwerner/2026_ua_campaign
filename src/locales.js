@@ -40,7 +40,11 @@ export const translations = {
             c13_name: "Iryna Kaplonova", c13_role: "Комерційний спеціаліст",
             c14_name: "Yelyzaveta Werner", c14_role: "Графічна дизайнерка",
             c15_name: "Olena Levchenko", c15_role: "Студентка",
-            c16_name: "Igor Kiselov", c16_role: "Консультант"
+            c16_name: "Igor Kiselov", c16_role: "Консультант",
+            c1_bio: "Біографія незабаром...", c2_bio: "Біографія незабаром...", c3_bio: "Біографія незабаром...", c4_bio: "Біографія незабаром...",
+            c5_bio: "Біографія незабаром...", c6_bio: "Біографія незабаром...", c7_bio: "Біографія незабаром...", c8_bio: "Біографія незабаром...",
+            c9_bio: "Біографія незабаром...", c10_bio: "Біографія незабаром...", c11_bio: "Біографія незабаром...", c12_bio: "Біографія незабаром...",
+            c13_bio: "Біографія незабаром...", c14_bio: "Біографія незабаром...", c15_bio: "Біографія незабаром...", c16_bio: "Біографія незабаром..."
         },
         vote: {
             title: "Як голосувати",
@@ -109,7 +113,11 @@ export const translations = {
             c13_name: "Iryna Kaplonova", c13_role: "Commercial Specialist",
             c14_name: "Yelyzaveta Werner", c14_role: "Graphic Designer",
             c15_name: "Olena Levchenko", c15_role: "Student",
-            c16_name: "Igor Kiselov", c16_role: "Consultant"
+            c16_name: "Igor Kiselov", c16_role: "Consultant",
+            c1_bio: "Biography coming soon...", c2_bio: "Biography coming soon...", c3_bio: "Biography coming soon...", c4_bio: "Biography coming soon...",
+            c5_bio: "Biography coming soon...", c6_bio: "Biography coming soon...", c7_bio: "Biography coming soon...", c8_bio: "Biography coming soon...",
+            c9_bio: "Biography coming soon...", c10_bio: "Biography coming soon...", c11_bio: "Biography coming soon...", c12_bio: "Biography coming soon...",
+            c13_bio: "Biography coming soon...", c14_bio: "Biography coming soon...", c15_bio: "Biography coming soon...", c16_bio: "Biography coming soon..."
         },
         vote: {
             title: "How to Vote",
@@ -178,7 +186,11 @@ export const translations = {
             c13_name: "Iryna Kaplonova", c13_role: "Kaufmännische Angestellte",
             c14_name: "Yelyzaveta Werner", c14_role: "Grafikdesignerin",
             c15_name: "Olena Levchenko", c15_role: "Studentin",
-            c16_name: "Igor Kiselov", c16_role: "Consultant"
+            c16_name: "Igor Kiselov", c16_role: "Consultant",
+            c1_bio: "Biografie folgt bald...", c2_bio: "Biografie folgt bald...", c3_bio: "Biografie folgt bald...", c4_bio: "Biografie folgt bald...",
+            c5_bio: "Biografie folgt bald...", c6_bio: "Biografie folgt bald...", c7_bio: "Biografie folgt bald...", c8_bio: "Biografie folgt bald...",
+            c9_bio: "Biografie folgt bald...", c10_bio: "Biografie folgt bald...", c11_bio: "Biografie folgt bald...", c12_bio: "Biografie folgt bald...",
+            c13_bio: "Biografie folgt bald...", c14_bio: "Biografie folgt bald...", c15_bio: "Biografie folgt bald...", c16_bio: "Biografie folgt bald..."
         },
         vote: {
             title: "Wie wähle ich?",
