@@ -112,11 +112,30 @@ body {
 }
 
 /* Nav Styles */
+body {
+  padding-top: 80px;
+  /* Height of fixed header + spacing */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid var(--color-bg-alt);
+  transition: all 0.3s ease;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 80px;
+  /* Increased by ~15% from 70px to accommodate larger logo */
 }
 
 .nav-links {
