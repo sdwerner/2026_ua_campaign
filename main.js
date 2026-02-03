@@ -13,6 +13,14 @@ function renderCandidates(lang) {
     // Candidates with photos (based on file availability)
     const candidatesWithPhotos = [1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14];
 
+    // Custom object positions for specific candidates
+    // Default is 'top', which works for most. 
+    // Yana (3) and Denis (6) need adjustment to show lower face.
+    const customPositions = {
+        3: 'center 20%',
+        6: 'center 25%'
+    };
+
     grid.innerHTML = '';
     // We have 16 candidates
     for (let i = 1; i <= 16; i++) {
@@ -31,7 +39,8 @@ function renderCandidates(lang) {
 
         let imageHtml;
         if (hasPhoto) {
-            imageHtml = `<img src="./public/images/candidates/c${i}.jpg" alt="${name}" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">`;
+            const position = customPositions[i] || 'top';
+            imageHtml = `<img src="./public/images/candidates/c${i}.jpg" alt="${name}" style="width: 100%; height: 100%; object-fit: cover; object-position: ${position};">`;
         } else {
             imageHtml = `<img src="./public/images/candidate-placeholder.svg" alt="Placeholder" style="width: 50%; opacity: 0.5;">`;
         }
@@ -64,6 +73,11 @@ function openModal(candidateId) {
 
     // Image logic
     const candidatesWithPhotos = [1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14];
+    const customPositions = {
+        3: 'center 20%',
+        6: 'center 25%'
+    };
+
     const hasPhoto = candidatesWithPhotos.includes(candidateId);
     const i = candidateId;
     const bgColor = i % 2 === 0 ? '#fef08a' : '#e0f2fe';
@@ -71,7 +85,8 @@ function openModal(candidateId) {
     const imageWrapper = document.querySelector('.modal-image-wrapper');
     if (imageWrapper) {
         if (hasPhoto) {
-            imageWrapper.innerHTML = `<img src="./public/images/candidates/c${i}.jpg" alt="Candidate" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">`;
+            const position = customPositions[i] || 'top';
+            imageWrapper.innerHTML = `<img src="./public/images/candidates/c${i}.jpg" alt="Candidate" style="width: 100%; height: 100%; object-fit: cover; object-position: ${position};">`;
         } else {
             imageWrapper.innerHTML = `
                 <div style="width: 100%; height: 100%; background: ${bgColor}; display: flex; align-items: center; justify-content: center;">
