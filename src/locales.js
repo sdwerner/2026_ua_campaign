@@ -73,7 +73,12 @@ export const translations = {
             briefwahl_info: "З 2 лютого можна замовити голосування поштою онлайн через OLIWA або QR-код. Документи надсилаються додому.",
             dates_title: "Важливі дати",
             dates_election: "15 березня 2026 — Вибори у Франкфурті",
-            dates_deadline: "13 березня (13:00) — Дедлайн для Briefwahl"
+            dates_deadline: "13 березня (13:00) — Дедлайн для Briefwahl",
+            absentee_card: {
+                title: "Документи для голосування поштою вже можна замовити:",
+                cta: "Замовити документи",
+                text: "Кожна особа може замовити їх для себе на власну адресу. Електронна пошта та номер телефону не обов’язкові — ці дані є добровільними."
+            }
         },
         footer: {
             desc: "Присвячено представництву української громади на комунальних виборах. Приєднуйтесь до нас у формуванні нашого майбутнього.",
@@ -156,7 +161,12 @@ export const translations = {
             briefwahl_info: "Starting Feb 2, you can apply for mail-in voting online via OLIWA or QR code. Documents are sent to your home.",
             dates_title: "Key Dates",
             dates_election: "March 15, 2026 — Election Day",
-            dates_deadline: "March 13 (1:00 PM) — Briefwahl Deadline"
+            dates_deadline: "March 13 (1:00 PM) — Briefwahl Deadline",
+            absentee_card: {
+                title: "Absentee ballot documents can already be requested:",
+                cta: "Request Documents",
+                text: "Each person can order them for themselves to their own address. Email and phone number are not required — providing them is voluntary."
+            }
         },
         footer: {
             desc: "Dedicated to representing the Ukrainian community in communal elections. Join us in shaping our future.",
@@ -239,7 +249,12 @@ export const translations = {
             briefwahl_info: "Ab dem 2. Februar können Sie die Briefwahl online über OLIWA oder QR-Code beantragen. Unterlagen kommen per Post.",
             dates_title: "Wichtige Termine",
             dates_election: "15. März 2026 — Wahltag",
-            dates_deadline: "13. März (13:00 Uhr) — Briefwahl-Frist"
+            dates_deadline: "13. März (13:00 Uhr) — Briefwahl-Frist",
+            absentee_card: {
+                title: "Die Briefwahlunterlagen können bereits beantragt werden:",
+                cta: "Briefwahlunterlagen beantragen",
+                text: "Jede Person kann sie für sich selbst an die eigene Adresse bestellen. E-Mail und Telefonnummer sind nicht erforderlich — diese Angaben sind freiwillig."
+            }
         },
         footer: {
             desc: "Engagiert für die Vertretung der ukrainischen Gemeinschaft bei den Kommunalwahlen. Gestalten Sie mit uns unsere Zukunft.",
