@@ -20,7 +20,9 @@ export const translations = {
             card2_title: "Збереження культури",
             card2_text: "Фінансування українських культурних заходів, шкіл та громадських зібрань для збереження наших традицій.",
             card3_title: "Бізнес-мережа",
-            card3_text: "Створення потужної мережі для українських підприємців у Франкфурті для спільного розвитку та успіху."
+            card3_text: "Створення потужної мережі для українських підприємців у Франкфурті для спільного розвитку та успіху.",
+            card4_title: "Інтеграція та можливості",
+            card4_text: "Ми працюємо над тим, щоб українці у Франкфурті мали реальний доступ до можливості вивчення і покращення німецької мови, отримання освіти, роботи та підприємництва. Ми надаємо підтримку в вирішенні повсякденних питань. Наша мета — це підтримка інтеграції українців у Франкфурті, їхньої активної участі в житті міста та майбутнє як для тих українців, хто залишається в Німеччині, так і для тих, хто планує повернутися."
         },
         candidates: {
             title: "Познайомтеся з кандидатами",
@@ -108,7 +110,9 @@ export const translations = {
             card2_title: "Cultural Preservation",
             card2_text: "Funding for Ukrainian cultural events, schools, and community gatherings to keep our traditions alive.",
             card3_title: "Business Network",
-            card3_text: "Creating a strong network for Ukrainian entrepreneurs in Frankfurt to grow and succeed together."
+            card3_text: "Creating a strong network for Ukrainian entrepreneurs in Frankfurt to grow and succeed together.",
+            card4_title: "Integration & Opportunities",
+            card4_text: "We work to ensure that Ukrainians in Frankfurt have real access to opportunities for learning and improving German, education, employment, and entrepreneurship. We provide support in resolving everyday issues. Our goal is to support the integration of Ukrainians in Frankfurt, their active participation in city life, and a future both for those who stay in Germany and those who plan to return."
         },
         candidates: {
             title: "Meet the Candidates",
@@ -196,7 +200,9 @@ export const translations = {
             card2_title: "Kulturerhalt",
             card2_text: "Förderung ukrainischer Kulturveranstaltungen, Schulen und Gemeinschaftstreffen zur Bewahrung unserer Traditionen.",
             card3_title: "Business-Netzwerk",
-            card3_text: "Aufbau eines starken Netzwerks für ukrainische Unternehmer in Frankfurt für gemeinsames Wachstum und Erfolg."
+            card3_text: "Aufbau eines starken Netzwerks für ukrainische Unternehmer in Frankfurt für gemeinsames Wachstum und Erfolg.",
+            card4_title: "Integration & Chancen",
+            card4_text: "Wir arbeiten daran, dass Ukrainer in Frankfurt realen Zugang zum Erlernen und Verbessern der deutschen Sprache, zu Bildung, Arbeit und Unternehmertum haben. Wir unterstützen bei der Lösung alltäglicher Fragen. Unser Ziel ist die Unterstützung der Integration der Ukrainer in Frankfurt, ihre aktive Teilhabe am Stadtleben und eine Zukunft sowohl für diejenigen, die in Deutschland bleiben, als auch für jene, die eine Rückkehr planen."
         },
         candidates: {
             title: "Lernen Sie die Kandidaten kennen",
