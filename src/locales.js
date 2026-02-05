@@ -15,14 +15,14 @@ export const translations = {
         manifest: {
             title: "Наш маніфест",
             subtitle: "Ключові пріоритети для нашої громади у Франкфурті.",
-            card1_title: "Підтримка інтеграції",
-            card1_text: "Створення спеціальних центрів для новоприбулих для допомоги з бюрократією, вивченням мови та житлом.",
-            card2_title: "Збереження культури",
-            card2_text: "Фінансування українських культурних заходів, шкіл та громадських зібрань для збереження наших традицій.",
-            card3_title: "Бізнес-мережа",
-            card3_text: "Створення потужної мережі для українських підприємців у Франкфурті для спільного розвитку та успіху.",
-            card4_title: "Інтеграція та можливості",
-            card4_text: "Ми працюємо над тим, щоб українці у Франкфурті мали реальний доступ до можливості вивчення і покращення німецької мови, отримання освіти, роботи та підприємництва. Ми надаємо підтримку в вирішенні повсякденних питань. Наша мета — це підтримка інтеграції українців у Франкфурті, їхньої активної участі в житті міста та майбутнє як для тих українців, хто залишається в Німеччині, так і для тих, хто планує повернутися."
+            card1_title: "ІНТЕГРАЦІЯ ТА МОЖЛИВОСТІ",
+            card1_text: "Ми працюємо над тим, щоб українці у Франкфурті мали реальний доступ до можливості вивчення і покращення німецької мови, отримання освіти, роботи та підприємництва. Ми надаємо підтримку в вирішенні повсякденних питань. Наша мета — це підтримка інтеграції українців у Франкфурті, їхньої активної участі в житті міста та майбутнє як для тих українців, хто залишається в Німеччині, так і для тих, хто планує повернутися.",
+            card2_title: "КУЛЬТУРА ТА МОВА",
+            card2_text: "Ми зберігаємо українську культуру видимою в публічному просторі Франкфурта: підтримуємо культурні події, школи, творчі ініціативи й громадські простори. Виступаємо за інституційне закріплення української мови в школах міста. Плекаємо пам’ять, традиції та творимо діалог між культурами.",
+            card3_title: "УКРАЇНСЬКА БІЗНЕС-СПІЛЬНОТА",
+            card3_text: "Створюємо бізнес-мережу для українських підприємців і фахівців у Франкфурті. Підсилюємо доступ до можливостей, партнерств та міських програм. Допомагаємо тим, хто запускає бізнес, і тим, хто інтегрується в місцевий ринок праці.",
+            card4_title: "ДЕМОКРАТІЯ ТА ПРЕДСТАВНИЦТВО",
+            card4_text: "Ми стоїмо на європейських демократичних цінностях: рівність, права людини, прозорість, участь. Прагнемо сильного голосу української громади в KAV і сталого діалогу з політиками, адміністрацією та іншими громадами. Ми слухаємо, об’єднуємо та представляємо — щоб український голос у Франкфурті був чутним і впливовим."
         },
         candidates: {
             title: "Познайомтеся з кандидатами",
@@ -105,14 +105,14 @@ export const translations = {
         manifest: {
             title: "Our Manifest",
             subtitle: "Key priorities for our community in Frankfurt.",
-            card1_title: "Integration Support",
-            card1_text: "Establishing dedicated centers for new arrivals to help with bureaucracy, language learning, and housing.",
-            card2_title: "Cultural Preservation",
-            card2_text: "Funding for Ukrainian cultural events, schools, and community gatherings to keep our traditions alive.",
-            card3_title: "Business Network",
-            card3_text: "Creating a strong network for Ukrainian entrepreneurs in Frankfurt to grow and succeed together.",
-            card4_title: "Integration & Opportunities",
-            card4_text: "We work to ensure that Ukrainians in Frankfurt have real access to opportunities for learning and improving German, education, employment, and entrepreneurship. We provide support in resolving everyday issues. Our goal is to support the integration of Ukrainians in Frankfurt, their active participation in city life, and a future both for those who stay in Germany and those who plan to return."
+            card1_title: "Integration & Opportunities",
+            card1_text: "We work to ensure that Ukrainians in Frankfurt have real access to opportunities for learning and improving German, education, employment, and entrepreneurship. We provide support in resolving everyday issues. Our goal is to support the integration of Ukrainians in Frankfurt, their active participation in city life, and a future both for those who stay in Germany and those who plan to return.",
+            card2_title: "Culture & Language",
+            card2_text: "We keep Ukrainian culture visible in Frankfurt's public space: we support cultural events, schools, creative initiatives, and public spaces. We advocate for the institutional establishment of the Ukrainian language in the city's schools. We cherish memory and traditions and create a dialogue between cultures.",
+            card3_title: "Ukrainian Business Network",
+            card3_text: "We are creating a business network for Ukrainian entrepreneurs and specialists in Frankfurt. We strengthen access to opportunities, partnerships, and city programs. We help those starting a business and those integrating into the local labor market.",
+            card4_title: "Democracy & Participation",
+            card4_text: "We stand for European democratic values: equality, human rights, transparency, participation. We strive for a strong voice of the Ukrainian community in the KAV and a sustainable dialogue with politicians, administration, and other communities. We listen, unite, and represent — so that the Ukrainian voice in Frankfurt is audible and influential."
         },
         candidates: {
             title: "Meet the Candidates",
@@ -195,14 +195,14 @@ export const translations = {
         manifest: {
             title: "Unser Wahlprogramm",
             subtitle: "Die wichtigsten Prioritäten für unsere Gemeinschaft in Frankfurt.",
-            card1_title: "Integrationshilfe",
-            card1_text: "Einrichtung spezieller Zentren für Neuankömmlinge zur Hilfe bei Bürokratie, Spracherwerb und Wohnungssuche.",
-            card2_title: "Kulturerhalt",
-            card2_text: "Förderung ukrainischer Kulturveranstaltungen, Schulen und Gemeinschaftstreffen zur Bewahrung unserer Traditionen.",
-            card3_title: "Business-Netzwerk",
-            card3_text: "Aufbau eines starken Netzwerks für ukrainische Unternehmer in Frankfurt für gemeinsames Wachstum und Erfolg.",
-            card4_title: "Integration & Chancen",
-            card4_text: "Wir arbeiten daran, dass Ukrainer in Frankfurt realen Zugang zum Erlernen und Verbessern der deutschen Sprache, zu Bildung, Arbeit und Unternehmertum haben. Wir unterstützen bei der Lösung alltäglicher Fragen. Unser Ziel ist die Unterstützung der Integration der Ukrainer in Frankfurt, ihre aktive Teilhabe am Stadtleben und eine Zukunft sowohl für diejenigen, die in Deutschland bleiben, als auch für jene, die eine Rückkehr planen."
+            card1_title: "Integration & Chancen",
+            card1_text: "Wir arbeiten daran, dass Ukrainer in Frankfurt realen Zugang zum Erlernen und Verbessern der deutschen Sprache, zu Bildung, Arbeit und Unternehmertum haben. Wir unterstützen bei der Lösung alltäglicher Fragen. Unser Ziel ist die Unterstützung der Integration der Ukrainer in Frankfurt, ihre aktive Teilhabe am Stadtleben und eine Zukunft sowohl für diejenigen, die in Deutschland bleiben, als auch für jene, die eine Rückkehr planen.",
+            card2_title: "Kultur & Sprache",
+            card2_text: "Wir machen die ukrainische Kultur im öffentlichen Raum Frankfurts sichtbar: Wir unterstützen kulturelle Veranstaltungen, Schulen, kreative Initiativen und öffentliche Räume. Wir treten für die institutionelle Verankerung der ukrainischen Sprache in den Schulen der Stadt ein. Wir pflegen Erinnerung, Traditionen und schaffen einen Dialog zwischen den Kulturen.",
+            card3_title: "Ukrainisches Business-Netzwerk",
+            card3_text: "Wir schaffen ein Business-Netzwerk für ukrainische Unternehmer und Fachkräfte in Frankfurt. Wir stärken den Zugang zu Möglichkeiten, Partnerschaften und städtischen Programmen. Wir helfen denen, die ein Unternehmen gründen, und denen, die sich in den lokalen Arbeitsmarkt integrieren.",
+            card4_title: "Demokratie & Mitbestimmung",
+            card4_text: "Wir stehen für europäische demokratische Werte: Gleichheit, Menschenrechte, Transparenz, Teilhabe. Wir streben nach einer starken Stimme der ukrainischen Gemeinschaft in der KAV und einem beständigen Dialog mit Politikern, der Verwaltung und anderen Gemeinschaften. Wir hören zu, vereinigen und repräsentieren – damit die ukrainische Stimme in Frankfurt gehört wird und einflussreich ist."
         },
         candidates: {
             title: "Lernen Sie die Kandidaten kennen",
