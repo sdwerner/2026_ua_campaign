@@ -158,14 +158,14 @@ header.section {
   line-height: 1.1;
   max-width: 900px;
   margin: 0 auto 1rem;
-  color: black;
+  color: #1F2937;
   word-wrap: break-word;
   /* Prevent overflow */
 }
 
 .hero-subtitle {
   font-size: 1.5rem;
-  color: black;
+  color: #4B5563;
   margin-bottom: 2rem;
   font-family: var(--font-display);
   text-transform: uppercase;
