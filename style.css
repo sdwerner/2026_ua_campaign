@@ -397,3 +397,18 @@ html {
     font-size: 1.5rem;
   }
 }
+
+/* Manifest Grid Layout */
+.manifest-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Mobile: 1 column (1x4) */
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .manifest-grid {
+    grid-template-columns: repeat(2, 1fr);
+    /* Desktop: 2 columns (2x2) */
+  }
+}
