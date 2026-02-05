@@ -22,8 +22,12 @@ function renderCandidates(lang) {
     };
 
     grid.innerHTML = '';
+
+    // Define display order: Candidates with photos first, then placeholders (2, 7, 15, 16)
+    const displayOrder = [1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 2, 7, 15, 16];
+
     // We have 16 candidates
-    for (let i = 1; i <= 16; i++) {
+    displayOrder.forEach(i => {
         const name = translations[lang].candidates[`c${i}_name`];
         const role = translations[lang].candidates[`c${i}_role`];
 
@@ -55,7 +59,7 @@ function renderCandidates(lang) {
       </div>
     `;
         grid.appendChild(card);
-    }
+    });
 }
 
 // Modal Functions
