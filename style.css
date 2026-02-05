@@ -2,7 +2,7 @@
   /* Ukraine Colors - Updated from Image */
   --color-primary: #0033A0;
   /* Deeper Blue */
-  --color-secondary: #FFDD00;
+  --color-secondary: #ffca06;
 
   /* Neutral Colors */
   --color-text: #1F2937;
@@ -146,7 +146,7 @@ body {
 
 /* Hero Styles */
 header.section {
-  background: linear-gradient(180deg, #FFF9C4 0%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #ffca06 0%, #FFFFFF 100%);
   padding-top: 4rem;
   padding-bottom: 0;
   overflow: hidden;
