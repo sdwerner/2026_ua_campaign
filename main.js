@@ -11,7 +11,7 @@ function renderCandidates(lang) {
     if (!grid) return;
 
     // Candidates with photos (based on file availability)
-    const candidatesWithPhotos = [1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14];
+    const candidatesWithPhotos = [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
     // Custom object positions for specific candidates
     // Default is 'top', which works for most. 
@@ -24,7 +24,7 @@ function renderCandidates(lang) {
     grid.innerHTML = '';
 
     // Define display order: Candidates with photos first, then placeholders (2, 7, 15, 16)
-    const displayOrder = [1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14, 2, 7, 15, 16];
+    const displayOrder = [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 2, 15, 16];
 
     // We have 16 candidates
     displayOrder.forEach(i => {
@@ -76,7 +76,7 @@ function openModal(candidateId) {
     document.getElementById('modal-bio').textContent = t.candidates[`c${candidateId}_bio`];
 
     // Image logic
-    const candidatesWithPhotos = [1, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13, 14];
+    const candidatesWithPhotos = [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
     const customPositions = {
         3: 'center 20%',
         6: 'center 25%'
