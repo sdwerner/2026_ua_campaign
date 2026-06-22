@@ -25,9 +25,10 @@
       </div>
       <div class="nav-links">
         <a href="#manifest" style="font-weight: 500; font-size: 0.95rem;" data-i18n="nav.manifest">Маніфест</a>
-        <a href="#candidates" style="font-weight: 500; font-size: 0.95rem;" data-i18n="nav.candidates">Кандидати</a>
-        <a href="#vote" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.9rem;"
-          data-i18n="nav.vote">Як голосувати</a>
+        <a href="#results" style="font-weight: 500; font-size: 0.95rem;" data-i18n="nav.results">Результати</a>
+        <a href="#representatives" style="font-weight: 500; font-size: 0.95rem;" data-i18n="nav.representatives">Представники</a>
+        <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.25rem; font-size: 0.9rem;"
+          data-i18n="nav.contact">Контакти</a>
         <!-- Language Switcher -->
         <div style="display: flex; gap: 0.5rem; align-items: center;">
           <button class="lang-btn" data-lang="ua" title="Українська"
@@ -45,24 +46,28 @@
     <!-- Hero Section -->
     <header class="section">
       <div class="container">
+        <a href="#results" class="hero-badge" data-i18n="hero.badge">Офіційні результати виборів 🗳️</a>
         <h1 data-i18n="hero.title" class="hero-title">
           УКРАЇНСЬКИЙ ГОЛОС У ФРАНКФУРТІ
         </h1>
-        <p data-i18n="hero.subtitle_trilanguage" class="hero-subtitle">
-          Die Ukrainische Stimme in Frankfurt<br>
-          The Ukrainian voice in Frankfurt
+        <p data-i18n="hero.subtitle" class="hero-subtitle">
+          Координація та представництво української громади у міській раді іноземців.
         </p>
 
         <div class="hero-buttons">
-          <a href="#vote" class="btn btn-primary" style="font-size: 1.25rem; padding: 1rem 2.5rem;"
-            data-i18n="hero.cta_vote">
-            Як голосувати
+          <a href="#contact" class="btn btn-primary" style="font-size: 1.25rem; padding: 1rem 2.5rem;"
+            data-i18n="hero.cta_contact">
+            Зв'язатися з нами
+          </a>
+          <a href="#manifest" class="btn btn-secondary" style="font-size: 1.25rem; padding: 1rem 2.5rem;"
+            data-i18n="hero.cta_manifest">
+            Читати маніфест
           </a>
         </div>
 
         <!-- Hero Image -->
         <div style="position: relative; max-width: 1000px; margin: 0 auto; width: 100%;">
-          <img src="./public/images/hero-image.jpg" alt="Ukrainian List Candidates"
+          <img src="./public/images/hero-image.jpg" alt="Ukrainian List Representatives"
             style="width: 100%; height: auto; border-radius: 12px 12px 0 0; box-shadow: 0 -4px 20px rgba(0,0,0,0.1);">
         </div>
       </div>
@@ -78,171 +83,181 @@
         </div>
         <div class="manifest-grid">
           <!-- Card 1 -->
-          <div style="padding: 2rem; background: var(--color-bg-alt); border-radius: 12px; transition: transform 0.2s;">
-            <h3 style="color: var(--color-text); font-size: 1.25rem;" data-i18n="manifest.card1_title">Підтримка
-              інтеграції</h3>
-            <p style="color: var(--color-text-light);" data-i18n="manifest.card1_text">Створення спеціальних центрів для
-              новоприбулих для допомоги з бюрократією, вивченням мови та житлом.</p>
+          <div class="manifest-card">
+            <h3 data-i18n="manifest.card1_title">Підтримка інтеграції</h3>
+            <p data-i18n="manifest.card1_text">Створення спеціальних центрів для новоприбулих для допомоги з бюрократією, вивченням мови та житлом.</p>
           </div>
           <!-- Card 2 -->
-          <div style="padding: 2rem; background: var(--color-bg-alt); border-radius: 12px; transition: transform 0.2s;">
-            <h3 style="color: var(--color-text); font-size: 1.25rem;" data-i18n="manifest.card2_title">Збереження
-              культури</h3>
-            <p style="color: var(--color-text-light);" data-i18n="manifest.card2_text">Фінансування українських
-              культурних заходів, шкіл та громадських зібрань для збереження наших традицій.</p>
+          <div class="manifest-card">
+            <h3 data-i18n="manifest.card2_title">Збереження культури</h3>
+            <p data-i18n="manifest.card2_text">Фінансування українських культурних заходів, шкіл та громадських зібрань для збереження наших традицій.</p>
           </div>
           <!-- Card 3 -->
-          <div style="padding: 2rem; background: var(--color-bg-alt); border-radius: 12px; transition: transform 0.2s;">
-            <h3 style="color: var(--color-text); font-size: 1.25rem;" data-i18n="manifest.card3_title">Бізнес-мережа
-            </h3>
-            <p style="color: var(--color-text-light);" data-i18n="manifest.card3_text">Створення потужної мережі для
-              українських підприємців у Франкфурті для спільного розвитку та успіху.</p>
+          <div class="manifest-card">
+            <h3 data-i18n="manifest.card3_title">Бізнес-мережа</h3>
+            <p data-i18n="manifest.card3_text">Створення потужної мережі для українських підприємців у Франкфурті для спільного розвитку та успіху.</p>
           </div>
           <!-- Card 4 -->
-          <div style="padding: 2rem; background: var(--color-bg-alt); border-radius: 12px; transition: transform 0.2s;">
-            <h3 style="color: var(--color-text); font-size: 1.25rem;" data-i18n="manifest.card4_title">
-              Інтеграція та можливості</h3>
-            <p style="color: var(--color-text-light);" data-i18n="manifest.card4_text">Ми працюємо над тим, щоб українці
-              у Франкфурті мали реальний доступ до можливості вивчення і покращення німецької мови, отримання освіти,
-              роботи та підприємництва.</p>
+          <div class="manifest-card">
+            <h3 data-i18n="manifest.card4_title">Інтеграція та можливості</h3>
+            <p data-i18n="manifest.card4_text">Ми працюємо над тим, щоб українці у Франкфурті мали реальний доступ до можливості вивчення і покращення німецької мови, отримання освіти, роботи та підприємництва.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Candidates Section -->
-    <section id="candidates" class="section" style="background: var(--color-bg-alt);">
+    <!-- Election Results Section -->
+    <section id="results" class="section results-section">
       <div class="container">
-        <div style="text-align: center; margin-bottom: 4rem;">
-          <h2 data-i18n="candidates.title">Познайомтеся з кандидатами</h2>
+        <div style="text-align: center; margin-bottom: 3rem;">
+          <h2 style="color: var(--color-primary);" data-i18n="results.title">Результати виборів</h2>
           <p style="color: var(--color-text-light); max-width: 600px; margin: 0 auto; font-size: 1.125rem;"
-            data-i18n="candidates.subtitle">Віддані люди, готові представляти вас.</p>
+            data-i18n="results.subtitle">Офіційні результати виборів до Консультативної ради іноземців (KAV) у Франкфурті 2026 року.</p>
         </div>
-        <div id="candidates-grid"
-          style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2.5rem;">
-          <!-- Candidates will be rendered here by main.js -->
-        </div>
-      </div>
-    </section>
-
-    <!-- How to Vote Section -->
-    <section id="vote" class="section"
-      style="background: linear-gradient(135deg, #0033A0 0%, #002270 100%); color: white;">
-      <div class="container">
-        <div style="text-align: center; margin-bottom: 4rem;">
-          <h2 style="color: white;" data-i18n="vote.title">Як голосувати</h2>
-          <p style="color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto; font-size: 1.125rem;"
-            data-i18n="vote.subtitle">Ваш голос має силу. Ось як ним скористатися.</p>
-        </div>
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-          <!-- Step 1 -->
-          <div style="text-align: center;">
-            <div
-              style="width: 64px; height: 64px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-weight: 700; font-size: 1.5rem;">
-              1</div>
-            <img src="./public/images/step-notification.jpg" alt="Notification"
-              style="width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 2px solid rgba(255,255,255,0.1);">
-            <h3 style="font-size: 1.25rem;" data-i18n="vote.step1_title">Перевірте пошту</h3>
-            <p style="color: rgba(255,255,255,0.8); font-size: 0.95rem;" data-i18n="vote.step1_text">У лютому ви
-              отримаєте повідомлення про вибори (Wahlbenachrichtigung) поштою.</p>
-          </div>
-          <!-- Step 2 -->
-          <div style="text-align: center;">
-            <div
-              style="width: 64px; height: 64px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-weight: 700; font-size: 1.5rem;">
-              2</div>
-            <img src="./public/images/vote-step-2.png" alt="List 9"
-              style="width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 2px solid rgba(255,255,255,0.1);">
-            <h3 style="font-size: 1.25rem;" data-i18n="vote.step2_title">Знайдіть список №7</h3>
-            <p style="color: rgba(255,255,255,0.8); font-size: 0.95rem;" data-i18n="vote.step2_text">Шукайте
-              'Український список Франкфурт' у виборчому бюлетені. Це список номер 7.</p>
-          </div>
-          <!-- Step 3 -->
-          <div style="text-align: center;">
-            <div
-              style="width: 64px; height: 64px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-weight: 700; font-size: 1.5rem;">
-              3</div>
-            <img src="./public/images/step-ballot.jpg" alt="Ballot"
-              style="width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 2px solid rgba(255,255,255,0.1);">
-            <h3 style="font-size: 1.25rem;" data-i18n="vote.step3_title">Поставте 3 хрестики</h3>
-            <p style="color: rgba(255,255,255,0.8); font-size: 0.95rem;" data-i18n="vote.step3_text">Поставте до 3
-              хрестиків навпроти нашого списку або конкретних кандидатів, щоб надати нам максимальну підтримку.</p>
-          </div>
-        </div>
-
-
-
-        <!-- Absentee Ballot CTA -->
-        <div
-          style="margin-top: 4rem; margin-bottom: 2rem; background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; text-align: center; border: 0.5px solid #FFDD00;">
-          <h3 style="font-size: 1.5rem; margin-bottom: 1rem;" data-i18n="vote.absentee_card.title">Документи для
-            голосування поштою вже можна замовити:</h3>
-          <p style="margin-bottom: 2rem; font-size: 1.1rem; max-width: 800px; margin-left: auto; margin-right: auto;"
-            data-i18n="vote.absentee_card.text">Кожна особа може замовити їх для себе на власну адресу. Електронна пошта
-            та номер телефону не обов’язкові — ці дані є добровільними.</p>
-          <a href="https://wahlschein.ekom21.de/IWS/start.do?mb=6412000" target="_blank" class="btn"
-            style="background: #FFDD00; color: #0033A0; padding: 1rem 2rem; font-size: 1.25rem; font-weight: bold; text-decoration: none; display: inline-block; border-radius: 8px;"
-            data-i18n="vote.absentee_card.cta">Замовити документи</a>
-        </div>
-
-        <!-- Detailed Info Subsections -->
-        <div
-          style="margin-top: 5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; text-align: left; background: rgba(255,255,255,0.05); padding: 3rem; border-radius: 16px; border: 1px solid rgba(255,255,255,0.1);">
-
-          <!-- Eligibility -->
-          <div>
-            <h3
-              style="font-family: var(--font-display); text-transform: uppercase; margin-bottom: 1.5rem; border-bottom: 2px solid #FFDD00; display: inline-block; padding-bottom: 0.25rem;"
-              data-i18n="vote.eligibility_title">Хто може голосувати?</h3>
-            <img src="./public/images/info-eligibility.jpg" alt="Eligibility"
-              style="width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 2px solid rgba(255,255,255,0.1);">
-            <ul style="list-style: none; padding: 0;" data-i18n="vote.eligibility_list" class="vote-details-list">
-              <li>Виключно іноземне громадянство (без німецького)</li>
-              <li>Вік 18+ років на день виборів</li>
-              <li>Проживання у Франкфурті не менше 6 тижнів</li>
-            </ul>
-          </div>
-
-          <!-- Methods & Briefwahl -->
-          <div>
-            <h3
-              style="font-family: var(--font-display); text-transform: uppercase; margin-bottom: 1.5rem; border-bottom: 2px solid #FFDD00; display: inline-block; padding-bottom: 0.25rem;"
-              data-i18n="vote.methods_title">Способи голосування</h3>
-            <img src="./public/images/step-mail.jpg" alt="Mail-in Voting"
-              style="width: 100%; border-radius: 8px; margin-bottom: 1rem; border: 2px solid rgba(255,255,255,0.1);">
-            <p style="margin-bottom: 1rem; color: rgba(255,255,255,0.9);" data-i18n="vote.methods_text">Ви можете
-              голосувати особисто 15 березня або заздалегідь поштою (Briefwahl).</p>
-            <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.6; background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px;"
-              data-i18n="vote.briefwahl_info">Заявку на Briefwahl можна подати онлайн через портал OLIWA, за QR-кодом на
-              вашому повідомленні або особисто в офісі на Stiftstraße 29 (з 2 лютого).</p>
-          </div>
-
-          <!-- Important Dates -->
-          <div>
-            <h3
-              style="font-family: var(--font-display); text-transform: uppercase; margin-bottom: 1.5rem; border-bottom: 2px solid #FFDD00; display: inline-block; padding-bottom: 0.25rem;"
-              data-i18n="vote.dates_title">Важливі дати</h3>
-            <div style="display: flex; flex-direction: column; gap: 1rem;">
-              <div
-                style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; border-left: 4px solid #FFDD00;">
-                <p style="font-weight: 700; margin-bottom: 0;" data-i18n="vote.dates_election">15 березня 2026 — День
-                  виборів</p>
+        
+        <div class="results-dashboard">
+          <!-- Stats Panel -->
+          <div class="results-stats-panel">
+            <div class="status-banner">
+              <span class="status-badge" data-i18n="results.official_end">Amtliches Endergebnis</span>
+              <span style="font-size: 0.95rem; font-family: var(--font-display); text-transform: uppercase;">KAV Wahl 2026</span>
+            </div>
+            
+            <div class="stats-grid">
+              <!-- Votes Card -->
+              <div class="stat-card featured">
+                <div class="stat-value" data-i18n="results.list_percentage">4.2%</div>
+                <div class="stat-label" data-i18n="results.list_votes">36,927 votes</div>
               </div>
-              <div
-                style="background: rgba(255,255,255,0.1); padding: 1rem; border-radius: 8px; border-left: 4px solid rgba(255,255,255,0.3);">
-                <p style="font-weight: 500; margin-bottom: 0;" data-i18n="vote.dates_deadline">13 березня (13:00) —
-                  Дедлайн для Briefwahl</p>
+              
+              <!-- Seats Card -->
+              <div class="stat-card">
+                <div class="stat-value" data-i18n="results.seats_won">2</div>
+                <div class="stat-label" data-i18n="results.seats_desc">2 of 37 total seats</div>
               </div>
             </div>
           </div>
-
+          
+          <!-- Spotlight Panel -->
+          <div class="spotlight-card">
+            <h3 class="spotlight-title" data-i18n="results.headline">Historic Representation</h3>
+            <p style="color: var(--color-text-light); line-height: 1.6; font-size: 0.95rem;" data-i18n="results.desc">
+              Thanks to your support, the Ukrainian List has secured seats in the council for the first time.
+            </p>
+            
+            <div class="spotlight-reps">
+              <!-- Viktoriia -->
+              <div class="spotlight-rep-item">
+                <div class="spotlight-avatar-wrapper">
+                  <img src="./public/images/candidates/c1.jpg" alt="Viktoriia von Rosen" style="object-position: center 10%;">
+                </div>
+                <div class="spotlight-rep-info">
+                  <h4><a href="https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/geschaeftsstelle-der-kav/die-kav/mitglieder-der-kav/viktoriia-freifrau-von-rosen" target="_blank" class="rep-link">Viktoriia von Rosen ↗</a></h4>
+                  <p data-i18n="representatives.c1_role">Scientific Leader</p>
+                </div>
+              </div>
+              
+              <!-- Sofiia -->
+              <div class="spotlight-rep-item">
+                <div class="spotlight-avatar-wrapper">
+                  <img src="./public/images/candidate-placeholder.svg" alt="Sofiia Petroshenko" style="width: 50%; height: auto; opacity: 0.5; margin: 25%;">
+                </div>
+                <div class="spotlight-rep-info">
+                  <h4><a href="https://frankfurt.de/service-und-rathaus/verwaltung/aemter-und-institutionen/geschaeftsstelle-der-kav/die-kav/mitglieder-der-kav/sofiia-petroshenko" target="_blank" class="rep-link">Sofiia Petroshenko ↗</a></h4>
+                  <p data-i18n="representatives.c2_role">Specialist</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <div style="text-align: center; margin-top: 4rem;">
-          <a href="https://frankfurt.de/service-und-rathaus/stadtpolitik/wahlen/kommunalwahlen" target="_blank"
-            class="btn" style="background: white; color: #0033A0; padding: 1rem 2rem; font-size: 1.125rem;"
-            data-i18n="vote.cta_station">Знайти мою виборчу дільницю</a>
+    <!-- Representatives Section -->
+    <section id="representatives" class="section" style="background: var(--color-bg-alt);">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 4rem;">
+          <h2 data-i18n="representatives.title">Познайомтеся з кандидатами</h2>
+          <p style="color: var(--color-text-light); max-width: 600px; margin: 0 auto; font-size: 1.125rem;"
+            data-i18n="representatives.subtitle">Віддані люди, готові представляти вас.</p>
+        </div>
+        <div id="representatives-grid"
+          style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2.5rem;">
+          <!-- Representatives will be rendered here by main.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact" class="section" style="background: var(--color-bg);">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 3rem;">
+          <h2 style="color: var(--color-primary);" data-i18n="contact.title">Зв'язатися з нами</h2>
+          <p style="color: var(--color-text-light); max-width: 600px; margin: 0 auto; font-size: 1.125rem;"
+            data-i18n="contact.subtitle">Маєте запитання, пропозицію чи потребуєте підтримки? Напишіть нам.</p>
+        </div>
+        
+        <div class="contact-grid">
+          <!-- Left Column: Invitation Card -->
+          <div class="contact-info-panel">
+            <div class="contact-invitation-card">
+              <h3 data-i18n="contact.title">Зв'язатися з нами</h3>
+              <p data-i18n="contact.viktoriia_invite">
+                Звертайтеся до нашої команди або безпосередньо до обраних представників.
+              </p>
+              
+              <!-- Viktoriia's mini card -->
+              <div class="contact-rep-detail">
+                <div class="contact-rep-avatar">
+                  <img src="./public/images/candidates/c1.jpg" alt="Viktoriia von Rosen" style="object-position: center 10%;">
+                </div>
+                <div>
+                  <h4 style="font-family: var(--font-display); font-size: 1.25rem; text-transform: uppercase; margin-bottom: 0.25rem;">Viktoriia von Rosen</h4>
+                  <p style="color: var(--color-primary); font-weight: 600; font-size: 0.9rem;" data-i18n="contact.viktoriia_role">Голова списку / Обрана представниця</p>
+                  <p style="margin-top: 0.5rem; font-size: 0.95rem; font-weight: 500;"><a href="mailto:viktoriia.vonrosen@gmail.com" style="color: var(--color-primary); text-decoration: underline;">viktoriia.vonrosen@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Informational image illustration -->
+            <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); flex: 1; min-height: 200px;">
+              <img src="./public/images/info-contact.jpg" alt="Contact Illustration" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+          
+          <!-- Right Column: Interactive Form -->
+          <div class="contact-form-wrapper">
+            <!-- Success & Error Alert Containers -->
+            <div id="contact-alert-success" class="alert alert-success"></div>
+            <div id="contact-alert-danger" class="alert alert-danger"></div>
+            
+            <form id="contact-form" novalidate>
+              <!-- Name Field -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label" data-i18n="contact.label_name">Ваше ім'я</label>
+                <input type="text" id="contact-name" class="form-control" data-i18n-placeholder="contact.placeholder_name" placeholder="Введіть ваше ім'я" required>
+                <span class="form-error-text" id="error-contact-name"></span>
+              </div>
+              
+              <!-- Email Field -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label" data-i18n="contact.label_email">Ваша електронна пошта</label>
+                <input type="email" id="contact-email" class="form-control" data-i18n-placeholder="contact.placeholder_email" placeholder="Введіть вашу електронну пошту" required>
+                <span class="form-error-text" id="error-contact-email"></span>
+              </div>
+              
+              <!-- Subject Field -->
+              <div class="form-group">
+                <label for="contact-subject" class="form-label" data-i18n="contact.label_subject">Тема</label>
+                <input type="text" id="contact-subject" class="form-control" data-i18n-placeholder="contact.placeholder_subject" placeholder="Введіть тему повідомлення" required>
+                <span class="form-error-text" id="error-contact-subject"></span>
+              </div>
+              
+              <!-- Message Body Field -->
+              <div class="form-group">
+                <label for="contact-body" class="form-label" data-i18n="contact.label_body">Повідомлення</label>
+                <textarea id="contact-body" class="form-control" rows="5" data-i18n-placeholder="contact.placeholder_body" placeholder="Введіть ваше повідомлення (мін. 10 символів)..." required></textarea>
+                <span class="form-error-text" id="error-contact-body"></span>
         </div>
       </div>
     </section>
@@ -255,8 +270,7 @@
           <img src="./public/images/UDF logo white.svg" alt="Ukrainian List Frankfurt"
             style="height: 60px; width: auto; margin-bottom: 1rem;">
           <p style="color: #9CA3AF; font-size: 0.9rem; line-height: 1.6;" data-i18n="footer.desc">Присвячено
-            представництву української громади на комунальних виборах. Приєднуйтесь до нас у формуванні нашого
-            майбутнього.</p>
+            представництву української громади у Франкфурті. Разом будуємо наше майбутнє.</p>
         </div>
 
         <div>
@@ -264,8 +278,9 @@
             data-i18n="footer.links_title">Посилання</h4>
           <ul style="color: #9CA3AF; font-size: 0.9rem;">
             <li style="margin-bottom: 0.5rem;"><a href="#manifest" data-i18n="nav.manifest">Маніфест</a></li>
-            <li style="margin-bottom: 0.5rem;"><a href="#candidates" data-i18n="nav.candidates">Кандидати</a></li>
-            <li style="margin-bottom: 0.5rem;"><a href="#vote" data-i18n="nav.vote">Як голосувати</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="#results" data-i18n="nav.results">Результати</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="#representatives" data-i18n="nav.representatives">Представники</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="#contact" data-i18n="nav.contact">Контакти</a></li>
             <li style="margin-bottom: 0.5rem;"><a href="imprint.html" target="_blank">Imprint / Impressum</a></li>
             <li><a href="privacy.html" target="_blank">Privacy Policy / Datenschutz</a></li>
           </ul>
@@ -275,8 +290,8 @@
           <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 1rem; color: white;"
             data-i18n="footer.contact_title">Контакти</h4>
           <ul style="color: #9CA3AF; font-size: 0.9rem;">
-            <li style="margin-bottom: 0.5rem;"><a href="mailto:info@ud-ffm.de"
-                style="color: inherit;">info@ud-ffm.de</a></li>
+            <li style="margin-bottom: 0.5rem;"><a href="mailto:viktoriia.vonrosen@gmail.com"
+                style="color: inherit;">viktoriia.vonrosen@gmail.com</a></li>
             <li style="margin-bottom: 0.5rem;"><a href="https://www.ud-ffm.de" target="_blank"
                 style="color: inherit;">www.ud-ffm.de</a></li>
             <li>
@@ -326,6 +341,7 @@
           <h2 id="modal-name">Candidate Name</h2>
           <div id="modal-role" class="modal-role">Role</div>
           <p id="modal-bio" class="modal-bio">Bio...</p>
+          <div id="modal-kav-container" style="margin-top: 1.5rem; display: none;"></div>
         </div>
       </div>
     </div>
