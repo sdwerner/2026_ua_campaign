@@ -29,6 +29,7 @@ All content on the page is localized. The structure of the `translations` object
       "subtitle": "string",
       "headline": "string",
       "desc": "string",
+      "list_percentage": "string",
       "list_votes": "string",
       "seats_won": "string",
       "seats_desc": "string",
