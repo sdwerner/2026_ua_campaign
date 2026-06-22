@@ -200,7 +200,7 @@
         <div class="contact-grid">
           <!-- Left Column: Invitation Card -->
           <div class="contact-info-panel">
-            <div class="contact-invitation-card">
+            <div class="contact-invitation-card" style="flex: 1; display: flex; flex-direction: column; justify-content: center;">
               <h3 data-i18n="contact.title">Зв'язатися з нами</h3>
               <p data-i18n="contact.viktoriia_invite">
                 Звертайтеся до нашої команди або безпосередньо до обраних представників.
@@ -214,14 +214,8 @@
                 <div>
                   <h4 style="font-family: var(--font-display); font-size: 1.25rem; text-transform: uppercase; margin-bottom: 0.25rem;">Viktoriia von Rosen</h4>
                   <p style="color: var(--color-primary); font-weight: 600; font-size: 0.9rem;" data-i18n="contact.viktoriia_role">Голова списку / Обрана представниця</p>
-                  <p style="margin-top: 0.5rem; font-size: 0.95rem; font-weight: 500;"><a href="mailto:viktoriia.vonrosen@gmail.com" style="color: var(--color-primary); text-decoration: underline;">viktoriia.vonrosen@gmail.com</a></p>
                 </div>
               </div>
-            </div>
-            
-            <!-- Informational image illustration -->
-            <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); flex: 1; min-height: 200px;">
-              <img src="./public/images/info-contact.jpg" alt="Contact Illustration" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
           </div>
           
@@ -258,6 +252,12 @@
                 <label for="contact-body" class="form-label" data-i18n="contact.label_body">Повідомлення</label>
                 <textarea id="contact-body" class="form-control" rows="5" data-i18n-placeholder="contact.placeholder_body" placeholder="Введіть ваше повідомлення (мін. 10 символів)..." required></textarea>
                 <span class="form-error-text" id="error-contact-body"></span>
+              </div>
+              
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 8px; padding: 1rem; font-size: 1.1rem; text-transform: uppercase;" data-i18n="contact.btn_send">Надіслати повідомлення</button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
