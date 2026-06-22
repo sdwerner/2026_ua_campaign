@@ -61,6 +61,7 @@ All content on the page is localized. The structure of the `translations` object
       "subtitle": "string",
       "viktoriia_invite": "string",
       "viktoriia_role": "string",
+      "sofiia_role": "string",
       "label_name": "string",
       "label_email": "string",
       "label_subject": "string",
