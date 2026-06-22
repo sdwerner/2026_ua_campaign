@@ -21,7 +21,7 @@ export const translations = {
             "list_percentage": "4.2%",
             "list_votes": "36,927 голосів",
             "seats_won": "2",
-            "seats_desc": "з 37 місць у раді",
+            "seats_desc": "місця в раді (всього 37)",
             "official_end": "Офіційні остаточні результати"
         },
         "manifest": {
